@@ -171,7 +171,7 @@ impl App {
             // <li></li>
             <input
                 class="new-todo"
-                placeholder="What needs to be done?"
+                placeholder="What would you like to be done?"
                 {onkeypress}
             />
             /* Or multiline:
