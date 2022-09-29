@@ -1,9 +1,7 @@
 [package]
 name = "todomvc"
 version = "0.1.0"
-authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
-edition = "2021"
-license = "MIT OR Apache-2.0"
+edition = "2022"
 
 [dependencies]
 strum = "0.24"
