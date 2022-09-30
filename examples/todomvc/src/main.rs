@@ -115,7 +115,7 @@ impl Component for App {
                             class="toggle-all"
                             id="toggle-all"
                             checked={self.state.is_all_completed()}
-                            onclick={ctx.link().callback(|_| Msg::ToggleAll)}
+                            // onclick={ctx.link().callback(|_| Msg::ToggleAll)}
                         />
                         <label for="toggle-all" />
                         <ul class="todo-list">
