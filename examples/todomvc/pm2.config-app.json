@@ -1,0 +1,9 @@
+{
+	"apps": [
+		{
+			"name": "TodoMVC-Rust",
+			"script": "trunk serve --release",
+			"boot-cmd-for-tips": "$ pm2 start pm2.config-app.json"
+		}
+	]
+}

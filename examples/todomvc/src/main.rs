@@ -106,7 +106,7 @@ impl Component for App {
             <div class="todomvc-wrapper">
                 <section class="todoapp">
                     <header class="header">
-                        <h1>{ "todos" }</h1>
+                        <h2>{ "Todo List" }</h2>
                         { self.view_input(ctx.link()) }
                     </header>
                     <section class={classes!("main", hidden_class)}>
@@ -115,7 +115,7 @@ impl Component for App {
                             class="toggle-all"
                             id="toggle-all"
                             checked={self.state.is_all_completed()}
-                            onclick={ctx.link().callback(|_| Msg::ToggleAll)}
+                            // onclick={ctx.link().callback(|_| Msg::ToggleAll)}
                         />
                         <label for="toggle-all" />
                         <ul class="todo-list">
@@ -137,8 +137,6 @@ impl Component for App {
                 </section>
                 <footer class="info">
                     <p>{ "Double-click to edit a todo" }</p>
-                    <p>{ "Written by " }<a href="https://github.com/DenisKolodin/" target="_blank">{ "Denis Kolodin" }</a></p>
-                    <p>{ "Part of " }<a href="http://todomvc.com/" target="_blank">{ "TodoMVC" }</a></p>
                 </footer>
             </div>
         }
@@ -180,7 +178,7 @@ impl App {
             // <li></li>
             <input
                 class="new-todo"
-                placeholder="What needs to be done?"
+                placeholder="What would you like to be done?"
                 {onkeypress}
             />
             /* Or multiline:
